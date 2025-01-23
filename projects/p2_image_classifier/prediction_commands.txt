@@ -1,0 +1,5 @@
+python prediction.py test_images/orange_dahlia.jpg flower_classifier.keras >> flower_classifier_output.txt
+
+python prediction.py test_images/orange_dahlia.jpg flower_classifier.keras --top_k 5 --category_names label_map.json >> top_k_5_output.txt
+
+python prediction.py test_images/orange_dahlia.jpg flower_classifier.keras --top_k 3 --category_names label_map.json >> top_k_3_output.txt
